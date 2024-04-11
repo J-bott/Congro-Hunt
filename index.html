@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congro Hunt</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/fonts.css">
+    <link rel="stylesheet" href="src/animations.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+    <script src="window.js"></script>
+    <script src="particle.js"></script>
+    <script src="popup.js"></script>
+
+</head>
+<body>
+    <!-- <div id="preloader"></div> -->
+    <!-- viewport -->
+
+        <nav class="navbar">
+            <!-- <div class="about-ball"></div> -->
+            <a href="about.html">about</a>
+        </nav>
+
+        <!-- title that fades away -->
+        <h1 class="main-title fade-out">Congro<br>Hunt</h1>
+
+        <div class="popup-counter">
+            <p id="popup-number">0</p> <p>/14</p>
+        </div>
+
+<!-- popups with no display until triggered -->
+
+        <!-- obra 001: Maruja Mallo com Mantos de Algas -->
+        <article class="popup">
+            <div class="close-button">
+                    <div class="container zoom_shrink">
+                        <div class="close_icon zoom_shrink"> </div>
+                    </div>
+            </div>
+                <div class="popup-content">
+                    <img class="card-img" src="src/imgs/001_marujaMallo.png" alt="">
+                    <h2 class="card-title">Maruja Mallo com Manto de Algas</h2>
+                </div>
+        </article>    
+
+        <!-- obra 002: Habitar a floresta -->
+        <article class="popup">
+            <div class="close-button">
+                    <div class="container zoom_shrink">
+                        <div class="close_icon zoom_shrink"> </div>
+                    </div>
+            </div>
+                <div class="popup-content">
+                    <img class="card-img" src="src/imgs/002_habitar_a_floresta.jpg" alt="">
+                    <h2 class="card-title">Habitar a floresta</h2>
+                </div>
+        </article> 
+        <!-- obra 003:  Cabria para Porto -->
+        <article class="popup">
+            <div class="close-button">
+                    <div class="container zoom_shrink">
+                        <div class="close_icon zoom_shrink"> </div>
+                    </div>
+            </div>
+                <div class="popup-content">
+                    <img class="card-img" src="src/imgs/003_cabria_para_porto.jpg" alt="">
+                    <h2 class="card-title">Cabria para porto</h2>
+                </div>
+        </article> 
+        <!-- obra 004: Dexeso e vida Cotidiá -->
+        <article class="popup">
+            <div class="close-button">
+                    <div class="container zoom_shrink">
+                        <div class="close_icon zoom_shrink"> </div>
+                    </div>
+            </div>
+                <div class="popup-content">
+                    <img class="card-img" src="src/imgs/004_dexeso_e_vida_cotidia.jpg" alt="">
+                    <h2 class="card-title">Dexeso e vida Cotidia</h2>
+                </div>
+        </article> 
+        <!-- obra 005: Untitled -->
+        <article class="popup">
+            <div class="close-button">
+                    <div class="container zoom_shrink">
+                        <div class="close_icon zoom_shrink"> </div>
+                    </div>
+            </div>
+                <div class="popup-content">
+                    <img class="card-img" src="src/imgs/005_Untitled.jpg" alt="">
+                    <h2 class="card-title">Untitled</h2>
+                </div>
+        </article> 
+        <!-- obra 006: O que arde -->
+        <article class="popup">
+            <div class="close-button">
+                    <div class="container zoom_shrink">
+                        <div class="close_icon zoom_shrink"> </div>
+                    </div>
+            </div>
+                <div class="popup-content">
+                    <img class="card-img" src="src/imgs/006_o_que_arde.jpg" alt="">
+                    <h2 class="card-title">O que arde</h2>
+                </div>
+        </article> 
+        <!-- obra 007: Ego sense I, II e III -->
+        <article class="popup">
+            <div class="close-button">
+                    <div class="container zoom_shrink">
+                        <div class="close_icon zoom_shrink"> </div>
+                    </div>
+            </div>
+                <div class="popup-content">
+                    <img class="card-img" src="src/imgs/007.jpg" alt="">
+                    <h2 class="card-title">Ego sense I, II e III</h2>
+                </div>
+        </article>  
+        <!-- obra 008: A quen nunca cantou custalle comezar -->
+        <article class="popup">
+            <div class="close-button">
+                    <div class="container zoom_shrink">
+                        <div class="close_icon zoom_shrink"> </div>
+                    </div>
+            </div>
+                <div class="popup-content">
+                    <img class="card-img" src="src/imgs/004_dexeso_e_vida_cotidia.jpg" alt="">
+                    <h2 class="card-title">A quen nunca cantou custalle comezar</h2>
+                </div>
+        </article>    
+        <!-- obra 009: Untitled(x2), untitled(x3) -->
+        <article class="popup">
+            <div class="close-button">
+                    <div class="container zoom_shrink">
+                        <div class="close_icon zoom_shrink"> </div>
+                    </div>
+            </div>
+                <div class="popup-content">
+                    <img class="card-img" src="src/imgs/001_marujaMallo.png" alt="">
+                    <h2 class="card-title">Untitled(x2), untitled(x3)</h2>
+                </div>
+        </article>    
+        <!-- obra 010: Labaredas Silvestres -->
+        <article class="popup">
+            <div class="close-button">
+                    <div class="container zoom_shrink">
+                        <div class="close_icon zoom_shrink"> </div>
+                    </div>
+            </div>
+                <div class="popup-content">
+                    <img class="card-img" src="src/imgs/010.jpeg" alt="">
+                    <h2 class="card-title">Labaredas Silvestres</h2>
+                </div>
+        </article> 
+        <!-- obra 011: Noite sem distancia -->
+        <article class="popup">
+            <div class="close-button">
+                    <div class="container zoom_shrink">
+                        <div class="close_icon zoom_shrink"> </div>
+                    </div>
+            </div>
+                <div class="popup-content">
+                    <img class="card-img" src="src/imgs/011.jpg" alt="">
+                    <h2 class="card-title">Noite sem distancia</h2>
+                </div>
+        </article>   
+        <!-- obra 012: El pensadero -->
+        <article class="popup">
+            <div class="close-button">
+                    <div class="container zoom_shrink">
+                        <div class="close_icon zoom_shrink"> </div>
+                    </div>
+            </div>
+                <div class="popup-content">
+                    <img class="card-img" src="src/imgs/012.jpg" alt="">
+                    <h2 class="card-title">El pensadero</h2>
+                </div>
+        </article>   
+        <!-- obra 013: Flor-fantasma - Diptico -->
+        <article class="popup">
+            <div class="close-button">
+                    <div class="container zoom_shrink">
+                        <div class="close_icon zoom_shrink"> </div>
+                    </div>
+            </div>
+                <div class="popup-content">
+                    <img class="card-img" src="src/imgs/013_flor_fantasma.jpg" alt="">
+                    <h2 class="card-title">Flor-fantasma - Diptico</h2>
+                </div>
+        </article>    
+        <!-- obra 014: Cem raios t'abram -->
+        <article class="popup">
+            <div class="close-button">
+                    <div class="container zoom_shrink">
+                        <div class="close_icon zoom_shrink"> </div>
+                    </div>
+            </div>
+                <div class="popup-content">
+                    <img class="card-img" src="src/imgs/014.jpg" alt="">
+                    <h2 class="card-title">Cem raios t'abram</h2>
+                </div>
+        </article> 
+        <!-- The Congro -->
+        <!-- <article class="popup">
+            <div class="close-button">
+                <div class="container zoom_shrink">
+                    <div class="close_icon zoom_shrink"> </div>
+                </div>
+            </div>
+            <h2 class="card-title">The Congro</h2>
+                <div class="non-title-content">
+
+                    <div class="card-img-n-credits">
+                        <img class="card-img" src="src/imgs/007.jpg" alt="">
+                        <p class="img-credits">img credits</p>
+                    </div>
+                    <div class="card-text">
+                        <p class="card-body-text">The installation "Cabria para Porto" is based on the vernacular architecture of Cabrias, structures used for drying conger eel, commonly found along the Costa da Morte in Galicia. Rethought as an exhibition space, the installation transposes artisanal and popular practices into the museum space, reclaiming the aesthetic experiences and historical figures associated with them. The Cabria becomes a space for encounter and discovery where works by Diego Vites dynamically interact with other works, objects, and gestures of artists with whom he often engages and collaborates: Alejandra Pombo Su, Cândido Caneiro, Geles, Mourae (Lois Bua), Neg (Nova Escultura Galega), Paulino De Moraña, Santiago Vites, and Violeta.
+                        Diego Vites' transdisciplinary work manifests through painting, installation, performance, sculpture, and video. His installations serve as extensions of all these practices, integrating his context and workspace into the exhibition environment. His work is a permanent "cruising zone" between the territories it traverses: the Canary Islands, Ecuador, and Galicia, becoming a speculative and narrative device that traverses these spaces, both real and imagined.
+                        </p>
+                    </div>
+                </div>
+        </article>    -->
+        
+</body>
+</html>
